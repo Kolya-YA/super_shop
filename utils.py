@@ -24,6 +24,7 @@ def ask_str(prompt, min_length=3, max_length=64):
         value = input(prompt)
         if len(value) < min_length or len(value) > max_length:
             print(f"Invalid input. Please enter a string between {min_length} and {max_length} characters.")
+            continue
         else:
             return value
 
