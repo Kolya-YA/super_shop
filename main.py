@@ -20,4 +20,7 @@ def main():
                 print("Invalid action")
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except (KeyboardInterrupt, SystemExit,EOFError):
+        print("\nBye!")
